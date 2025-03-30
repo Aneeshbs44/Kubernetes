@@ -35,7 +35,7 @@ spec:
             configMapKeyRef:
               name: mongodb-configmap
               key: database_url
-        - name: ME_CONFIG_BASICAUTH
+        - name: ME_CONFIG_BASICAUTH #Added this line to bypass the alert box which shows in the local host
           value: "false"
 ---
 apiVersion: v1
